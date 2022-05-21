@@ -1,0 +1,15 @@
+package com.amazonMarket.pageObjects;
+
+import org.junit.Test;
+
+import com.amazonMarket.testCases.BaseClass;
+
+public class TC_HomePageTest_001 extends BaseClass 
+{
+	@Test
+	public void HamburgerMenuTest()
+	{
+		
+	}
+
+}
