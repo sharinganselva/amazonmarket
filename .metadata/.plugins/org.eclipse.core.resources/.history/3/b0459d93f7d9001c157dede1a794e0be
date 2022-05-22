@@ -1,0 +1,29 @@
+package com.amazonMarket.testCases;
+
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+import com.amazonMarket.pageObjects.HomePage;
+import com.amazonMarket.pageObjects.ItemPage;
+import com.amazonMarket.pageObjects.SearchResultsPage;
+
+
+public class TC_HomePageTest_001 extends BaseClass 
+{
+	@Test
+	public void HamburgerMenuTest()
+	{
+		driver.get(baseURL);
+		logger.info("url opened: " + baseURL);
+		
+		HomePage home_page = new HomePage(driver);
+
+		home_page.clickOnHamburgerMenu();
+		home_page.clickOnTopCategory("TV, Appliances, Electronics");
+		home_page.clickOnSubCategory("Televisions");
+		SearchResultsPage search_page = home_page.selectAspectValue("Brands", "Samsung");
+		ItemPage item_page = search_page.clickNthResult(2);
+
+		WebElement about_this_item = item_page.get_about_this_item_element();
+		System.out.println(about_this_item.getText());
+	}
+}

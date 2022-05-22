@@ -1,0 +1,40 @@
+package com.amazonMarket.pageObjects;
+
+import java.time.Duration;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class ItemPage {
+
+	String about_this_item_text_xpath = "";
+
+	WebDriver localDriver;
+	WebDriverWait wait;
+
+	public ItemPage(WebDriver remoteDriver) {
+		localDriver = remoteDriver;
+		wait = new WebDriverWait(remoteDriver, Duration.ofSeconds(5));
+		PageFactory.initElements(remoteDriver, this);
+	}
+
+	public WebElement about_this_item_element() {
+		String actual_nth_result_xpath = nth_result_xpath.replace("__NTH_RESULT", n + "");
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(actual_nth_result_xpath)));
+		return this.localDriver.findElement(By.xpath(actual_nth_result_xpath));
+	}
+
+	public void clickNthResult(int result_number) {
+		this.get_result(result_number).click();
+		Set<String> window_handles = this.localDriver.getWindowHandles();
+		Object new_handle = window_handles.toArray()[2];
+		String new_handle_name = new_handle.toString();
+		localDriver.switchTo().window(new_handle_name);
+
+	}
+}

@@ -1,0 +1,87 @@
+package com.amazonMarket.pageObjects;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class HomePage {
+
+	String hamburger_xpath = "//header//a[@id='nav-hamburger-menu']/i";
+	String top_category_xpath = "//div[@id=\"hmenu-content\"]//div[contains(text(), \"__TOP_CATEGORY\")]";
+	String sub_menu_xpath = "";
+	String aspect_value_xpath = "";
+
+	WebDriver localDriver;
+
+	public HomePage(WebDriver remoteDriver) {
+		localDriver = remoteDriver;
+		PageFactory.initElements(remoteDriver, this);
+	}
+
+	public WebElement get_hamburger_menu() {
+		return this.localDriver.findElement(By.xpath(hamburger_xpath));
+	}
+
+	public WebElement get_top_category(String category_name) {
+		String actual_category_xpath = top_category_xpath.replace("__TOP_CATEGORY", category_name);
+		return this.localDriver.findElement(By.xpath(actual_xpath));
+	}
+
+	public WebElement get_sub_category(String sub_category_name) {
+
+		return null;
+	}
+
+	public WebElement get_aspect_value(String aspect_name, String aspect_value) {
+
+		return null;
+	}
+
+	public WebElement get_result(int n) {
+		return null;
+	}
+
+	public HomePage clickOnHamburgerMenu() {
+		this.get_hamburger_menu().click();
+		return this;
+	}
+
+	public HomePage clickOnTopCategory(String categoryName) {
+		this.get_top_category(categoryName).click();
+		return this;
+	}
+
+	public HomePage clickOnSubCategory(String subCategoryName) {
+		this.get_top_category(subCategoryName).click();
+		return this;
+	}
+
+	public HomePage selectAspectValue(String aspectName, String aspectValue) {
+		this.get_aspect_value(aspectName, aspectValue).click();
+		return this;
+	}
+
+	public void clickNthResult(int result_number) {
+		this.get_result(result_number).click();
+	}
+
+	public static void main(String args[]) {
+
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "//Drivers//chromedriver");
+		WebDriver driver = new ChromeDriver();
+
+		driver.get("https://www.amazon.in");
+
+		HomePage home_page = new HomePage(driver);
+		home_page.clickOnHamburgerMenu();
+		home_page.clickOnTopCategory("TV, Appliances, Electronics");
+		home_page.clickOnSubCategory("Televisions");
+		home_page.selectAspectValue("Brands", "Samsung");
+		home_page.clickNthResult(2);
+
+	}
+
+}

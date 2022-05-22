@@ -1,0 +1,26 @@
+package com.amazonMarket.pageObjects;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
+
+public class SearchResultsPage {
+
+	String nth_result_xpath = "//span[@data-component-type=\"s-search-results\"]//div[@data-component-type=\"s-search-result\"][__NTH_RESULT]";
+
+	WebDriver localDriver;
+
+	public SearchResultsPage(WebDriver remoteDriver) {
+		localDriver = remoteDriver;
+		PageFactory.initElements(remoteDriver, this);
+	}
+
+	public WebElement get_result(int n) {
+		return null;
+	}
+
+	public void clickNthResult(int result_number) {
+		this.get_result(result_number).click();
+	}
+
+}

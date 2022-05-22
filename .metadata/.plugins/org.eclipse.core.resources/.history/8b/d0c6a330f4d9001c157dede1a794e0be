@@ -1,0 +1,5 @@
+package com.amazonMarket.utilities;
+
+public enum Category {
+
+}

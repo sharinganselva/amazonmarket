@@ -1,0 +1,66 @@
+package com.amazonMarket.pageObjects;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class HomePage {
+	
+	String hamburger_xpath = "";
+	String top_category_xpath = "";
+	String sub_menu_xpath = "";
+	String aspect_value_xpath = "";
+	
+	WebDriver localDriver;
+	
+	
+	public HomePage(WebDriver remoteDriver)
+	{
+		localDriver = remoteDriver;
+		PageFactory.initElements(remoteDriver, this);
+	}
+	
+	
+	public WebElement get_hamburger_menu() {
+		
+		return null;
+	}
+	
+	public WebElement get_top_category(String category_name) {
+		
+		return null;
+	}
+	
+	
+	public WebElement get_sub_category(String sub_category_name) {
+		
+		return null;
+	}
+	
+	
+	public WebElement aspect_value(String aspect_name, String aspect_value) {
+		
+		return null;
+	}
+	
+	
+	public void clickOnHamburgerMenu() {
+		this.get_hamburger_menu().click();
+	}	
+	
+	public void clickOnTopCategory(String categoryName)
+	{
+		this.get_top_category(categoryName).click();
+	}	
+	
+	public void clickOnSubCategory()
+	{
+		this.get_top_category(top_category_xpath).click();
+	}	
+	
+	public void clickOnHamburgerMenu()
+	{
+		this.get_hamburger_menu().click();
+	}	
+}
