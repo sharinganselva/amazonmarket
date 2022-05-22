@@ -33,6 +33,6 @@ public class TC_HomePageTest_001 extends BaseClass
 		
 		// 'About this item' section validation
 		Assert.assertTrue(item_page.verifyAboutItemDisplayed(), "Verify if About the Item section is visible");
-		logger.info("About this Item section is displayed ");
+		logger.info("About this Item: \n" + item_page.get_about_this_item_section_text());
 	}
 }
