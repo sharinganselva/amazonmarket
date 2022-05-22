@@ -10,8 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class HomePage 
-{
+public class HomePage {
 
 	String hamburger_xpath = "//header//a[@id='nav-hamburger-menu']/i";
 	String top_category_xpath = "//div[@id=\"hmenu-content\"]//*[contains(text(), \"__TOP_CATEGORY\")]";
@@ -25,62 +24,53 @@ public class HomePage
 	WebDriver localDriver;
 	WebDriverWait wait;
 
-	public HomePage(WebDriver remoteDriver) 
-	{
+	public HomePage(WebDriver remoteDriver) {
 		localDriver = remoteDriver;
 		wait = new WebDriverWait(remoteDriver, Duration.ofSeconds(5));
 		PageFactory.initElements(remoteDriver, this);
 
 	}
 
-	public WebElement get_hamburger_menu() 
-	{
+	public WebElement get_hamburger_menu() {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(hamburger_xpath)));
 		return this.localDriver.findElement(By.xpath(hamburger_xpath));
 	}
 
-	public WebElement get_top_category(String category_name) 
-	{
+	public WebElement get_top_category(String category_name) {
 		String actual_category_xpath = top_category_xpath.replace("__TOP_CATEGORY", category_name);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(actual_category_xpath)));
 		return this.localDriver.findElement(By.xpath(actual_category_xpath));
 	}
 
-	public WebElement get_sub_category(String sub_category_name) 
-	{
+	public WebElement get_sub_category(String sub_category_name) {
 		String actual_sub_category_xpath = sub_menu_xpath.replace("__SUB_CATEGORY", sub_category_name);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(actual_sub_category_xpath)));
 		return this.localDriver.findElement(By.xpath(actual_sub_category_xpath));
 	}
 
-	public WebElement get_aspect_value(String aspect_name, String aspect_value) 
-	{
+	public WebElement get_aspect_value(String aspect_name, String aspect_value) {
 		String actual_aspect_value_xpath = aspect_value_xpath.replace("__ASPECT_NAME", aspect_name)
 				.replace("__ASPECT_VALUE", aspect_value);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(actual_aspect_value_xpath)));
 		return this.localDriver.findElement(By.xpath(actual_aspect_value_xpath));
 	}
 
-	public HomePage clickOnHamburgerMenu() 
-	{
+	public HomePage clickOnHamburgerMenu() {
 		this.get_hamburger_menu().click();
 		return this;
 	}
 
-	public HomePage clickOnTopCategory(String categoryName) 
-	{
+	public HomePage clickOnTopCategory(String categoryName) {
 		this.get_top_category(categoryName).click();
 		return this;
 	}
 
-	public HomePage clickOnSubCategory(String subCategoryName) 
-	{
+	public HomePage clickOnSubCategory(String subCategoryName) {
 		this.get_top_category(subCategoryName).click();
 		return this;
 	}
 
-	public SearchResultsPage selectAspectValue(String aspectName, String aspectValue) 
-	{
+	public SearchResultsPage selectAspectValue(String aspectName, String aspectValue) {
 		this.get_aspect_value(aspectName, aspectValue).click();
 		return new SearchResultsPage(this.localDriver);
 	}

@@ -1,4 +1,5 @@
 package com.amazonMarket.testCases;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.amazonMarket.pageObjects.HomePage;
@@ -22,7 +23,7 @@ public class TC_HomePageTest_001 extends BaseClass
 		home_page.clickOnSubCategory(home_page.TV_UNDER_SUB_CATEGORY);
 		logger.info("Search Results page is displayed");
 		
-		// Select 'Samsung' check box under the Brands section and Sort
+		// Select Samsung checkbox under the Brands section 
 		SearchResultsPage search_page = home_page.selectAspectValue("Brands", "Samsung");
 		search_page.sortByHighToLow();
 		logger.info("Samsung TV under Brands section is filtered in the search result");

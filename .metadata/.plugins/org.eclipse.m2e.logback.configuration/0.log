@@ -2079,3 +2079,19 @@ org.eclipse.jdt.core.JavaModelException: target/test-classes/com/amazonMarket/pa
 2022-05-22 11:46:52,059 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/selva/eclipse-workspace/amazonMarketV1/src/main/resources
 2022-05-22 11:46:52,060 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-05-22 11:46:52,060 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/selva/eclipse-workspace/amazonMarketV1/src/test/resources
+2022-05-22 11:58:56,060 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-05-22 11:58:56,060 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/selva/eclipse-workspace/amazonMarketV1/src/main/resources
+2022-05-22 11:58:56,062 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-05-22 11:58:56,062 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/selva/eclipse-workspace/amazonMarketV1/src/test/resources
+2022-05-22 11:59:04,778 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-05-22 11:59:04,778 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/selva/eclipse-workspace/amazonMarketV1/src/main/resources
+2022-05-22 11:59:04,779 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-05-22 11:59:04,779 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/selva/eclipse-workspace/amazonMarketV1/src/test/resources
+2022-05-22 11:59:22,182 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-05-22 11:59:22,182 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/selva/eclipse-workspace/amazonMarketV1/src/main/resources
+2022-05-22 11:59:22,183 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-05-22 11:59:22,183 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/selva/eclipse-workspace/amazonMarketV1/src/test/resources
+2022-05-22 11:59:34,165 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-05-22 11:59:34,166 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/selva/eclipse-workspace/amazonMarketV1/src/main/resources
+2022-05-22 11:59:34,166 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-05-22 11:59:34,167 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/selva/eclipse-workspace/amazonMarketV1/src/test/resources

@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ItemPage 
 {
+
 	String about_this_item_text_xpath = "//h1[contains(text(), \"About this item\")]";
 
 	WebDriver localDriver;
