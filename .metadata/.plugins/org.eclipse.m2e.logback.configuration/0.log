@@ -2095,3 +2095,7 @@ org.eclipse.jdt.core.JavaModelException: target/test-classes/com/amazonMarket/pa
 2022-05-22 11:59:34,166 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/selva/eclipse-workspace/amazonMarketV1/src/main/resources
 2022-05-22 11:59:34,166 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-05-22 11:59:34,167 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/selva/eclipse-workspace/amazonMarketV1/src/test/resources
+2022-05-22 12:00:55,076 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-05-22 12:00:55,077 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/selva/eclipse-workspace/amazonMarketV1/src/main/resources
+2022-05-22 12:00:55,077 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-05-22 12:00:55,077 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/selva/eclipse-workspace/amazonMarketV1/src/test/resources

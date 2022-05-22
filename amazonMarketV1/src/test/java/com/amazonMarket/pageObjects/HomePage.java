@@ -12,7 +12,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomePage 
 {
-
 	String hamburger_xpath = "//header//a[@id='nav-hamburger-menu']/i";
 	String top_category_xpath = "//div[@id=\"hmenu-content\"]//*[contains(text(), \"__TOP_CATEGORY\")]";
 	String sub_menu_xpath = "//div[@id='hmenu-content']//a[contains(text(), \"__SUB_CATEGORY\")]";
