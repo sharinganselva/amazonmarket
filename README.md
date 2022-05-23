@@ -1,5 +1,13 @@
 # amazonmarket
 
+Disclaimer: 
+===========
+This is my first time coding in JAVA since my school. So, I had to spend a little bit more time understanding the language and the technologies that come with it such as JDK, Maven, etc. 
+
+This is also another reason I chose not to use the vanilla repo which now, I believe would have been the better thing to do. But, with absolutely no knowledge on Java, I felt starting from clean repo would make it easier for the purpose of solving the given problem. 
+
+My main focus was to create proper structure around the page objects and knocking down the tasks and prove that I can be hands-on. But, I did want to timebox my effort on this to get this done over the weekend. What I realize is that, I could make this framework much more better. I am still quite happy with what I have got so far over this weekend. 
+
 How to Run Locally with Chrome Driver: 
 =======================================
 0. Install latest JDK and Install Eclipse IDE
