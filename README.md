@@ -8,6 +8,8 @@ This is also another reason I chose not to use the vanilla repo which now, I bel
 
 My main focus was to create proper structure around the page objects and knocking down the tasks and prove that I can be hands-on. But, I did want to timebox my effort on this to get this done over the weekend. What I realize is that, I could make this framework much more better. I am still quite happy with what I have got so far over this weekend. 
 
+Also, please watch the two videos that I have sent where I was successfully able to run locally in Chrome browser, as well as against the docker container. 
+
 How to Run Locally with Chrome Driver: 
 =======================================
 0. Install latest JDK and Install Eclipse IDE
