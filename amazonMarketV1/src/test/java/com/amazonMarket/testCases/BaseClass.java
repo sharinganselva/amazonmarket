@@ -21,19 +21,16 @@ public class BaseClass {
 	@BeforeClass
 	public void setup()
 	{			
-		  ChromeOptions opt = new ChromeOptions();
+		ChromeOptions opt = new ChromeOptions();
 		  
-		  try 
-		  { 
-			  driver = new RemoteWebDriver(new URL(hostURL), opt); 
-		  } 
-		  catch(MalformedURLException e) 
-		  {
-			  e.printStackTrace(); 
-		  }
-		 		
-		//System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//Drivers//chromedriver");
-		//driver = new ChromeDriver();		
+		// Comment this try block to run locally that shows browser UI   
+		// try { driver = new RemoteWebDriver(new URL(hostURL), opt); }
+		// catch(MalformedURLException e) { e.printStackTrace(); }
+		 		 	
+		// Comment these two lines and uncomment the above try block to run against docker container using remote web driver. 
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//Drivers//chromedriver");
+		driver = new ChromeDriver();		
+
 		logger = LogManager.getLogger(BaseClass.class.getName());		
 	}
 	
