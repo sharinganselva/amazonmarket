@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-22T14:08:10 PDT" name="Default suite" finished-at="2022-05-22T14:08:25 PDT" duration-ms="14569">
+  <suite started-at="2022-05-22T19:17:24 PDT" name="Default suite" finished-at="2022-05-22T19:17:47 PDT" duration-ms="22109">
     <groups>
     </groups>
-    <test started-at="2022-05-22T14:08:10 PDT" name="Default test" finished-at="2022-05-22T14:08:25 PDT" duration-ms="14569">
+    <test started-at="2022-05-22T19:17:24 PDT" name="Default test" finished-at="2022-05-22T19:17:47 PDT" duration-ms="22109">
       <class name="com.amazonMarket.testCases.TC_HomePageTest_001">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.amazonMarket.testCases.TC_HomePageTest_001@2805d709]" started-at="2022-05-22T14:08:10 PDT" name="setup" finished-at="2022-05-22T14:08:12 PDT" duration-ms="1787" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.amazonMarket.testCases.TC_HomePageTest_001@2ea41516]" started-at="2022-05-22T19:17:24 PDT" name="setup" finished-at="2022-05-22T19:17:27 PDT" duration-ms="2993" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="HamburgerMenuTest()[pri:0, instance:com.amazonMarket.testCases.TC_HomePageTest_001@2805d709]" started-at="2022-05-22T14:08:12 PDT" name="HamburgerMenuTest" finished-at="2022-05-22T14:08:25 PDT" duration-ms="12542" status="PASS">
+        <test-method signature="HamburgerMenuTest()[pri:0, instance:com.amazonMarket.testCases.TC_HomePageTest_001@2ea41516]" started-at="2022-05-22T19:17:27 PDT" name="HamburgerMenuTest" finished-at="2022-05-22T19:17:46 PDT" duration-ms="18877" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HamburgerMenuTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.amazonMarket.testCases.TC_HomePageTest_001@2805d709]" started-at="2022-05-22T14:08:25 PDT" name="teardown" finished-at="2022-05-22T14:08:25 PDT" duration-ms="213" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.amazonMarket.testCases.TC_HomePageTest_001@2ea41516]" started-at="2022-05-22T19:17:46 PDT" name="teardown" finished-at="2022-05-22T19:17:47 PDT" duration-ms="206" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

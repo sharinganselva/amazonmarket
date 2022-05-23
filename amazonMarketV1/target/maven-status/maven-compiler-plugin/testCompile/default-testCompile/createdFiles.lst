@@ -1,0 +1,5 @@
+com/amazonMarket/pageObjects/HomePage.class
+com/amazonMarket/testCases/BaseClass.class
+com/amazonMarket/testCases/TC_HomePageTest_001.class
+com/amazonMarket/pageObjects/SearchResultsPage.class
+com/amazonMarket/pageObjects/ItemPage.class

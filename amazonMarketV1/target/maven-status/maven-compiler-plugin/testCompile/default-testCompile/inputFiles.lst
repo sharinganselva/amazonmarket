@@ -1,3 +1,5 @@
+/Users/selva/eclipse-workspace/amazonMarketV1/src/test/java/com/amazonMarket/pageObjects/ItemPage.java
 /Users/selva/eclipse-workspace/amazonMarketV1/src/test/java/com/amazonMarket/pageObjects/HomePage.java
+/Users/selva/eclipse-workspace/amazonMarketV1/src/test/java/com/amazonMarket/pageObjects/SearchResultsPage.java
 /Users/selva/eclipse-workspace/amazonMarketV1/src/test/java/com/amazonMarket/testCases/TC_HomePageTest_001.java
 /Users/selva/eclipse-workspace/amazonMarketV1/src/test/java/com/amazonMarket/testCases/BaseClass.java

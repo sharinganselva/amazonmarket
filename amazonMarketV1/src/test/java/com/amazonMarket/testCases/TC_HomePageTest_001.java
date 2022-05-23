@@ -29,10 +29,10 @@ public class TC_HomePageTest_001 extends BaseClass
 		
 		// Click on the second result
 		ItemPage item_page = search_page.clickNthResult(2);
-		logger.info("Secind item in the search result is selected which opened a new tab to display that item page");
+		logger.info("Second item in the search result is selected which opened a new tab to display that item page");
 		
 		// 'About this item' section validation
 		Assert.assertTrue(item_page.verifyAboutItemDisplayed(), "Verify if About the Item section is visible");
-		logger.info("About this Item: \n" + item_page.get_about_this_item_section_text());
+		logger.info("\nAbout this Item: \n" + item_page.get_about_this_item_section_text());
 	}
 }
